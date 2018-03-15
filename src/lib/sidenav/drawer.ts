@@ -34,16 +34,16 @@ import {
   ViewChild,
 } from '@angular/core';
 import {DOCUMENT} from '@angular/common';
-import {merge} from 'rxjs/observable/merge';
-import {filter} from 'rxjs/operators/filter';
-import {take} from 'rxjs/operators/take';
-import {startWith} from 'rxjs/operators/startWith';
-import {takeUntil} from 'rxjs/operators/takeUntil';
-import {debounceTime} from 'rxjs/operators/debounceTime';
-import {map} from 'rxjs/operators/map';
-import {fromEvent} from 'rxjs/observable/fromEvent';
-import {Subject} from 'rxjs/Subject';
-import {Observable} from 'rxjs/Observable';
+import {merge} from 'rxjs';
+import {filter} from 'rxjs/operators';
+import {take} from 'rxjs/operators';
+import {startWith} from 'rxjs/operators';
+import {takeUntil} from 'rxjs/operators';
+import {debounceTime} from 'rxjs/operators';
+import {map} from 'rxjs/operators';
+import {fromEvent} from 'rxjs';
+import {Subject} from 'rxjs';
+import {Observable} from 'rxjs';
 import {matDrawerAnimations} from './drawer-animations';
 import {CdkScrollable} from '@angular/cdk/scrolling';
 

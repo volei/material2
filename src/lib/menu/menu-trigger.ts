@@ -20,8 +20,8 @@ import {
   VerticalConnectionPos,
 } from '@angular/cdk/overlay';
 import {TemplatePortal} from '@angular/cdk/portal';
-import {filter} from 'rxjs/operators/filter';
-import {take} from 'rxjs/operators/take';
+import {filter} from 'rxjs/operators';
+import {take} from 'rxjs/operators';
 import {
   AfterContentInit,
   Directive,
@@ -36,9 +36,9 @@ import {
   Self,
   ViewContainerRef,
 } from '@angular/core';
-import {merge} from 'rxjs/observable/merge';
-import {of as observableOf} from 'rxjs/observable/of';
-import {Subscription} from 'rxjs/Subscription';
+import {merge} from 'rxjs';
+import {of as observableOf} from 'rxjs';
+import {Subscription} from 'rxjs';
 import {MatMenu} from './menu-directive';
 import {throwMatMenuMissingError} from './menu-errors';
 import {MatMenuItem} from './menu-item';

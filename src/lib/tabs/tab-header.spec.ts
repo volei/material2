@@ -17,7 +17,7 @@ import {MatTabHeader} from './tab-header';
 import {MatRippleModule} from '@angular/material/core';
 import {MatInkBar} from './ink-bar';
 import {MatTabLabelWrapper} from './tab-label-wrapper';
-import {Subject} from 'rxjs/Subject';
+import {Subject} from 'rxjs';
 import {VIEWPORT_RULER_PROVIDER, ScrollDispatchModule} from '@angular/cdk/scrolling';
 
 

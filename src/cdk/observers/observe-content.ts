@@ -21,8 +21,8 @@ import {
   SimpleChanges,
 } from '@angular/core';
 import {coerceBooleanProperty} from '@angular/cdk/coercion';
-import {Subject} from 'rxjs/Subject';
-import {debounceTime} from 'rxjs/operators/debounceTime';
+import {Subject} from 'rxjs';
+import {debounceTime} from 'rxjs/operators';
 
 /**
  * Factory that creates a new MutationObserver and allows us to stub it out in unit tests.

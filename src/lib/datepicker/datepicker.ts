@@ -19,8 +19,8 @@ import {
   FlexibleConnectedPositionStrategy,
 } from '@angular/cdk/overlay';
 import {ComponentPortal} from '@angular/cdk/portal';
-import {take} from 'rxjs/operators/take';
-import {filter} from 'rxjs/operators/filter';
+import {take} from 'rxjs/operators';
+import {filter} from 'rxjs/operators';
 import {
   AfterContentInit,
   ChangeDetectionStrategy,
@@ -44,9 +44,9 @@ import {
 import {CanColor, DateAdapter, mixinColor, ThemePalette} from '@angular/material/core';
 import {MatDialog, MatDialogRef} from '@angular/material/dialog';
 import {DOCUMENT} from '@angular/common';
-import {Subject} from 'rxjs/Subject';
-import {Subscription} from 'rxjs/Subscription';
-import {merge} from 'rxjs/observable/merge';
+import {Subject} from 'rxjs';
+import {Subscription} from 'rxjs';
+import {merge} from 'rxjs';
 import {createMissingDateImplError} from './datepicker-errors';
 import {MatDatepickerInput} from './datepicker-input';
 import {MatCalendar} from './calendar';

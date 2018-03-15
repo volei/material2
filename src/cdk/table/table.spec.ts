@@ -2,10 +2,8 @@ import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 import {Component, ContentChild, ContentChildren, Input, QueryList, ViewChild} from '@angular/core';
 import {CdkTable} from './table';
 import {CollectionViewer, DataSource} from '@angular/cdk/collections';
-import {BehaviorSubject} from 'rxjs/BehaviorSubject';
-import {combineLatest} from 'rxjs/observable/combineLatest';
+import {combineLatest, BehaviorSubject, Observable} from 'rxjs';
 import {CdkTableModule} from './index';
-import {Observable} from 'rxjs/Observable';
 import {
   getTableDuplicateColumnNameError,
   getTableMissingMatchingRowDefError,

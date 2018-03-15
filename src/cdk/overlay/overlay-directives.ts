@@ -25,7 +25,7 @@ import {
   TemplateRef,
   ViewContainerRef,
 } from '@angular/core';
-import {Subscription} from 'rxjs/Subscription';
+import {Subscription} from 'rxjs';
 import {Overlay} from './overlay';
 import {OverlayConfig} from './overlay-config';
 import {OverlayRef} from './overlay-ref';

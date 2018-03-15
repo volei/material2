@@ -26,12 +26,12 @@ import {
   ScrollStrategy,
   ViewportRuler,
 } from '@angular/cdk/overlay';
-import {filter} from 'rxjs/operators/filter';
-import {take} from 'rxjs/operators/take';
-import {map} from 'rxjs/operators/map';
-import {switchMap} from 'rxjs/operators/switchMap';
-import {startWith} from 'rxjs/operators/startWith';
-import {takeUntil} from 'rxjs/operators/takeUntil';
+import {filter} from 'rxjs/operators';
+import {take} from 'rxjs/operators';
+import {map} from 'rxjs/operators';
+import {switchMap} from 'rxjs/operators';
+import {startWith} from 'rxjs/operators';
+import {takeUntil} from 'rxjs/operators';
 import {
   AfterContentInit,
   Attribute,
@@ -84,10 +84,10 @@ import {
   _getOptionScrollPosition,
 } from '@angular/material/core';
 import {MatFormField, MatFormFieldControl} from '@angular/material/form-field';
-import {Observable} from 'rxjs/Observable';
-import {merge} from 'rxjs/observable/merge';
-import {Subject} from 'rxjs/Subject';
-import {defer} from 'rxjs/observable/defer';
+import {Observable} from 'rxjs';
+import {merge} from 'rxjs';
+import {Subject} from 'rxjs';
+import {defer} from 'rxjs';
 import {matSelectAnimations} from './select-animations';
 import {
   getMatSelectDynamicMultipleError,

@@ -22,7 +22,7 @@ import {MatDatepicker} from './datepicker';
 import {MatDatepickerInput} from './datepicker-input';
 import {MatDatepickerToggle} from './datepicker-toggle';
 import {MatDatepickerIntl, MatDatepickerModule, MAT_DATEPICKER_SCROLL_STRATEGY} from './index';
-import {Subject} from 'rxjs/Subject';
+import {Subject} from 'rxjs';
 
 describe('MatDatepicker', () => {
   const SUPPORTS_INTL = typeof Intl != 'undefined';

@@ -9,10 +9,8 @@ import {ComponentFixture, TestBed} from '@angular/core/testing';
 import {Component, ViewChild} from '@angular/core';
 
 import {CollectionViewer, DataSource} from '@angular/cdk/collections';
-import {BehaviorSubject} from 'rxjs/BehaviorSubject';
-import {Observable} from 'rxjs/Observable';
-import {combineLatest} from 'rxjs/observable/combineLatest';
-import {map} from 'rxjs/operators/map';
+import {combineLatest, BehaviorSubject, Observable} from 'rxjs';
+import {map} from 'rxjs/operators';
 
 import {BaseTreeControl} from './control/base-tree-control';
 import {TreeControl} from './control/tree-control';
@@ -640,7 +638,7 @@ class FakeDataSource extends DataSource<TestData> {
   connect(collectionViewer: CollectionViewer): Observable<TestData[]> {
     this.isConnected = true;
     const streams = [this._dataChange, collectionViewer.viewChange];
-    return combineLatest<[TestData[]]>(streams)
+    return combineLatest<TestData[]>(streams)
       .pipe(map(([data]) => {
         this.treeControl.dataNodes = data;
         return data;

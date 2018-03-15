@@ -25,8 +25,8 @@ import {
 } from '@angular/cdk/overlay';
 import {Platform} from '@angular/cdk/platform';
 import {ComponentPortal} from '@angular/cdk/portal';
-import {take} from 'rxjs/operators/take';
-import {takeUntil} from 'rxjs/operators/takeUntil';
+import {take} from 'rxjs/operators';
+import {takeUntil} from 'rxjs/operators';
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -42,8 +42,8 @@ import {
   ViewContainerRef,
   ViewEncapsulation,
 } from '@angular/core';
-import {Observable} from 'rxjs/Observable';
-import {Subject} from 'rxjs/Subject';
+import {Observable} from 'rxjs';
+import {Subject} from 'rxjs';
 import {matTooltipAnimations} from './tooltip-animations';
 import {BreakpointObserver, Breakpoints, BreakpointState} from '@angular/cdk/layout';
 
